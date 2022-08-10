@@ -1,0 +1,14 @@
+.navbar {
+    height: 100%;
+    background-color:rgb(228, 169, 97);
+    border-bottom: rgb(177, 174, 174);
+    display: flex;
+    justify-content: center;
+    
+ }
+
+ .navbar-link-item {
+    display: inline-block;
+    margin: 0px;
+    padding: 10px;
+ }
