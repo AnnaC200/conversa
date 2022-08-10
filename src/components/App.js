@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/app.css";
-import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Navbar from "./Navbar";
 import Login from "./Login";
 import Register from "./Register";
@@ -9,12 +9,10 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
-      <Router>
-        <Switch>
-          <Route exact path="/" component={Login} />
-          <Route exact path="/Register" component={Register} />
-        </Switch>
-      </Router>
+      <Switch>
+        <Route exact path="/" component={Login} />
+        <Route exact path="/Register" component={Register} />
+      </Switch>
     </div>
   );
 };
