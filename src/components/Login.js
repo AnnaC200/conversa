@@ -17,7 +17,6 @@ const Login = () => {
   };
   return (
     <div className="login">
-      Login
       <form onSubmit={handleLogin}>
         <label className="login-items" htmlFor="UserName">
           UserName
