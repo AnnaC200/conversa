@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles/login.css";
 
 const Login = () => {
   const initialState = {
@@ -36,6 +37,9 @@ const Login = () => {
             onChange={handleFieldChange}
           />
         </label>
+        <button className="login-items" type="submit">
+          Login
+        </button>
       </form>
     </div>
   );
