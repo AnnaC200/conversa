@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/login.css";
+import Navbar from "./Navbar";
 
 const Login = () => {
   const initialState = {
@@ -17,6 +18,7 @@ const Login = () => {
   };
   return (
     <div className="login">
+      <Navbar />
       <form onSubmit={handleLogin}>
         <label className="login-items" htmlFor="UserName">
           UserName

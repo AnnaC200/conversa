@@ -1,0 +1,11 @@
+.homepage-buttons {
+    display: flex;
+    flex-direction:column;
+    font-size: 20px;
+    position:absolute;
+    left: 550px;
+}
+
+.logo {
+    width: 1000px;
+}
