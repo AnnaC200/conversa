@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/homepage.css";
 import { Link } from "react-router-dom";
 // import { createBrowserHistory } from "history";
-import image from "../image/logo.png";
+import image from "../image/conversalogolargecolour.png";
 // import Login from "./Login";
 // import Register from "./Register";
 
