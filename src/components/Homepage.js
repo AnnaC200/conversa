@@ -13,6 +13,8 @@ const Homepage = () => (
     </button>
     <br />
     <br />
+    <br />
+    <br />
     <Link to="/Register">
       <button className="homepage-buttons" type="submit">
         Register
