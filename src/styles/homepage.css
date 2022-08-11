@@ -1,11 +1,71 @@
-.homepage-buttons {
-    display: flex;
-    flex-direction:column;
-    font-size: 20px;
-    position:absolute;
-    left: 550px;
+body {
+    width: 100%;
+}
+
+.background {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 6.91%;
+    width: 100%;
+    opacity: 0.2;
+    z-index: -1;
 }
 
 .logo {
-    width: 1000px;
+    margin-top: 10px;
+    position: absolute;
+    left: 9.58%;
+    right: 9.58%;
+    top: 3.56%;
+    bottom: 82.61%;
+    width: 80%;
+}
+
+.buttons {
+    margin-top: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homepage-button1 {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 140px;
+    height: 50px;
+    background: #F0CF65;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+.homepage-button2 {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 140px;
+    height: 50px;
+    background: #F0CF65;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 25px;
+}
+
+.slogans {
+    margin-top: 80px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.peopletalking {
+    margin-top: 100px;
+    width:100%;
+}
+
+.peopletalking img {
+    object-fit: contain;
+    overflow:hidden;
+    width: 100%;
+    height: 100%;
 }
