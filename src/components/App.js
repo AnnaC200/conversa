@@ -1,11 +1,20 @@
-import "../style/app.css";
+import React from "react";
+import "../styles/app.css";
+import Homepage from "./Homepage";
+// import { Route, Switch } from "react-router-dom";
+// import Login from "./Login";
+// import { Route, Switch } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <h1>Hi</h1>,
+      <Homepage />
+      {/* <Switch>
+        <Route exact path="/" component={Login} />
+        <Route exact path="/Register" component={Register} />
+      </Switch> */}
     </div>
   );
-}
+};
 
 export default App;
