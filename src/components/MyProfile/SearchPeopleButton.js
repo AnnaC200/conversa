@@ -1,14 +1,13 @@
 import React from "react";
-import CreateEvent from "./CreateEvent";
 
-const CreateEventButton = (props) => {
+const SearchPeopleButton = (props) => {
   return (
     <div>
       <button type="submit" onClick={props.onShowCreateEvent}>
-        Create Event
+        Search People
       </button>
     </div>
   );
 };
 
-export default CreateEventButton;
+export default SearchPeopleButton;

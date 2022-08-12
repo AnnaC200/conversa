@@ -1,9 +1,9 @@
 import React, { Fragment, useState } from "react";
 import PersonalProfile from "./PersonalProfile";
-import CreateEvent from "./CreateEvent";
-import CreateEventButton from "./CreateEventButton";
+import SearchPeople from "./SearchPeople";
+import SearchPeopleButton from "./SearchPeopleButton";
 
-const MyProfile = (props) => {
+const MyProfile = () => {
   const [createEventIsShown, setCreateEventIsShown] = useState(false);
 
   const showCreateEventHandler = () => {
@@ -16,9 +16,9 @@ const MyProfile = (props) => {
 
   return (
     <Fragment>
-      {createEventIsShown && <CreateEvent />}
+      {createEventIsShown && <SearchPeople onClose={hideCreateEventHandler} />}
       <PersonalProfile />
-      <CreateEventButton onShowCreateEvent={showCreateEventHandler} />
+      <SearchPeopleButton onShowCreateEvent={showCreateEventHandler} />
     </Fragment>
   );
 };
