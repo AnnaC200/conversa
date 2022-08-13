@@ -8,22 +8,18 @@ import "../styles/homepage.css";
 const Homepage = () => (
   <div className="homepage">
     <img className="logo" src={image} alt="conversa-logo" />
-    <button className="homepage-buttons" type="submit">
-      Login
-    </button>
-    <br />
-    <br />
-    <br />
-    <br />
-    <Link to="/Register">
-      <button className="homepage-buttons" type="submit">
+    <ul>
+      <Link className="homepage-buttons" to="/Login">
+        Login
+      </Link>
+      <br />
+      <br />
+      <br />
+      <br />
+      <Link className="homepage-buttons" to="/Register">
         Register
-      </button>
-    </Link>
-    {/* <Switch>
-      <Route exact path="/" component={Login} />
-      <Route exact path="/Register" component={Register} />
-    </Switch> */}
+      </Link>
+    </ul>
   </div>
 );
 

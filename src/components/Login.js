@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/login.css";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const initialState = {
@@ -40,6 +41,12 @@ const Login = () => {
           Login
         </button>
       </form>
+      <br />
+      <div>
+        <Link className="link-to" to="/Register">
+          Need to register?
+        </Link>
+      </div>
     </div>
   );
 };
