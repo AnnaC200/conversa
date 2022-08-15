@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/login.css";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const initialState = {
@@ -18,7 +19,7 @@ const Login = () => {
   };
   return (
     <div className="login">
-      <Navbar />
+      {/* <Navbar /> */}
       <form onSubmit={handleLogin}>
         <label className="login-items" htmlFor="UserName">
           UserName
@@ -42,6 +43,12 @@ const Login = () => {
           Login
         </button>
       </form>
+      <br />
+      <div>
+        <Link className="link-to" to="/Register">
+          Need to register?
+        </Link>
+      </div>
     </div>
   );
 };
