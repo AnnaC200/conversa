@@ -23,6 +23,13 @@ const Homepage = () => {
           <Link className="homepage-button2" to="/Register">
             Register
           </Link>
+          <br />
+          <br />
+          <br />
+          <br />
+          <Link className="homepage-button2" to="/MyProfile">
+            MyProfile
+          </Link>
         </div>
         <div>
           <p className="slogans">
