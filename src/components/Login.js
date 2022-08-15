@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import "../styles/login.css";
-<<<<<<< HEAD
 // import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
-=======
->>>>>>> matt-branch
 
 const Login = () => {
   const initialState = {
@@ -22,10 +19,6 @@ const Login = () => {
   };
   return (
     <div className="login">
-<<<<<<< HEAD
-      {/* <Navbar /> */}
-=======
->>>>>>> matt-branch
       <form onSubmit={handleLogin}>
         <label className="login-items" htmlFor="UserName">
           UserName
@@ -49,15 +42,12 @@ const Login = () => {
           Login
         </button>
       </form>
-<<<<<<< HEAD
       <br />
       <div>
         <Link className="link-to" to="/Register">
           Need to register?
         </Link>
       </div>
-=======
->>>>>>> matt-branch
     </div>
   );
 };
