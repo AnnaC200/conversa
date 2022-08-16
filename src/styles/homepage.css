@@ -16,7 +16,7 @@ body {
     bottom: 6.91%;
     width: 100%;
     opacity: 0.2;
-    z-index: -1;
+    z-index: -3;
 }
 
 .logo {
@@ -27,34 +27,24 @@ body {
     top: 3.56%;
     bottom: 82.61%;
     width: 80%;
-    stroke: black;
-}
+    max-width: 400px;
+    margin: auto;
+  }
 
 .buttons {
-    margin-top: 35%;
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.homepage-button1 {
+.homepage-button {
     font-family: 'Josefin Sans', sans-serif;
     width: 140px;
     height: 50px;
     background: #F0CF65;
     border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 25px;
-    text-align: center;
-    line-height: 50px;
-}
-
-.homepage-button2 {
-    font-family: 'Josefin Sans', sans-serif;
-    width: 140px;
-    height: 50px;
-    background: #F0CF65;
-    border: 1px solid #000000;
+    border-radius: 2px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 25px;
     text-align: center;
@@ -66,18 +56,25 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 25px;
     text-align: center;
+    z-index: -2;
 }
 
 .peopletalking {
-    margin-top: 100px;
-    width:100%;
-}
+    position:fixed;
+    margin: auto;
+    width: 100%;
+    max-width: 2000px;
+    bottom:0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
 .peopletalking img {
     object-fit: contain;
     overflow:hidden;
     width: 100%;
     height: 100%;
+    z-index: -1;
 }
 
 a {

@@ -3,6 +3,7 @@ import "../styles/register.css";
 import { Link } from "react-router-dom";
 import image from "../image/logocolour.png";
 import background from "../image/languages.png";
+import peopletalking from "../image/peopletalking.png";
 
 const Register = () => {
   const initialState2 = {
@@ -23,13 +24,16 @@ const Register = () => {
     <>
       <div className="images">
         <img className="background" src={background} alt="background" />
+      </div>
+      <div>
         <img className="logo" src={image} alt="conversa-logo" />
       </div>
-      <div className="register">
-        <form onSubmit={handleRegister}>
+      <div>
+        <form className="register" onSubmit={handleRegister}>
           <label className="register-items" htmlFor="UserName">
             Username
             <input
+              className="inputfield"
               id="UserName"
               name="UserName"
               value={fields.UserName}
@@ -39,6 +43,7 @@ const Register = () => {
           <label className="register-items" htmlFor="Email">
             Email
             <input
+              className="inputfield"
               id="Email"
               name="Email"
               value={fields.Email}
@@ -48,21 +53,23 @@ const Register = () => {
           <label className="register-items" htmlFor="Password">
             Password
             <input
+              className="inputfield"
               id="Password"
               name="Password"
               value={fields.Password}
               onChange={handleFieldChange}
             />
           </label>
-          <button className="register-items" type="submit">
+          <button id="button" className="register-items" type="submit">
             Register
           </button>
         </form>
         <br />
-        <div>
-          <Link className="link-to" to="/Login">
-            Already have an account?
-          </Link>
+        <div className="link-to">
+          <Link to="/Login">Already have an account?</Link>
+        </div>
+        <div className="peopletalking">
+          <img src={peopletalking} alt="people talking" />
         </div>
       </div>
     </>

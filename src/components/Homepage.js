@@ -13,21 +13,21 @@ const Homepage = () => {
         <img className="background" src={background} alt="background" />
         <img className="logo" src={image} alt="conversa-logo" />
         <div className="buttons">
-          <Link className="homepage-button1" to="/Login">
+          <Link className="homepage-button" to="/Login">
             Sign-in
           </Link>
           <br />
           <br />
           <br />
           <br />
-          <Link className="homepage-button2" to="/Register">
+          <Link className="homepage-button" to="/Register">
             Register
           </Link>
           <br />
           <br />
           <br />
           <br />
-          <Link className="homepage-button2" to="/MyProfile">
+          <Link className="homepage-button" to="/MyProfile">
             My Profile
           </Link>
         </div>
