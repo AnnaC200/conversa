@@ -1,17 +1,31 @@
-.register {
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
-  border: 2px solid rgb(30, 7, 12);
-  text-align: center;
-  padding: 100px;
-  width: 130px;
-  position: absolute;
-  left: 550px;
-  background-color: rgb(58, 56, 111);
-  border-radius: 25px;
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
 
-.register-items {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+body {
+  width: 100%;
+}
+
+.background {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 6.91%;
+  width: 100%;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.logo {
+  margin-top: 10px;
+  position: absolute;
+  left: 9.58%;
+  right: 9.58%;
+  top: 3.56%;
+  bottom: 82.61%;
+  width: 80%;
+  stroke: black;
 }
