@@ -28,7 +28,7 @@ const Homepage = () => {
           <br />
           <br />
           <Link className="homepage-button2" to="/MyProfile">
-            MyProfile
+            My Profile
           </Link>
         </div>
         <div>
