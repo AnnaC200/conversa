@@ -1,5 +1,6 @@
 import React from "react";
 import MessageButton from "./MessageButton";
+import ScheduleMeetUpButton from "./ScheduleMeetUpButton";
 
 const IndividualPerson = (props) => {
   return (
@@ -12,6 +13,9 @@ const IndividualPerson = (props) => {
         <div>About Me: {props.aboutMe}</div>
         <div>
           <MessageButton />
+        </div>
+        <div>
+          <ScheduleMeetUpButton />
         </div>
       </div>
     </ul>
