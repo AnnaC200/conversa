@@ -1,6 +1,8 @@
 import React from "react";
 import Modal from "./Modal";
 import IndividualPerson from "./IndividualPerson";
+import CityFilter from "./CityFilter";
+import LanguageFilter from "./LanguageFilter";
 
 const dummyPeople = [
   {
@@ -73,6 +75,8 @@ const SearchPeople = (props) => {
 
   return (
     <Modal onClose={props.onClose}>
+      <CityFilter />
+      <LanguageFilter />
       <div>
         <ul>{listPeople}</ul>
         <button type="submit" onClick={props.onClose}>
