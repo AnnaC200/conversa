@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+.logopic {
+    position: relative;
+    margin-left: 0px;
+    width: 250px;
+    max-width: 300px;
+    line-height: 10px;
+    padding-top: 6px;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 63px;
+  background-color: #f0cf65;
+}
+
+.logobox {
+    width: 100%;
+}
+
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav ul {
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li {
+  margin: 0px;
+  display: inline-block;
+  float: left;
+  background-color: #f0cf65;
+}
+
+nav a {
+  display: block;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 60px;
+}
+
+nav ul li:hover > ul {
+  display: inherit;
+}
+
+nav ul ul li {
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 170px;
+}
+
+li > a:after {
+  content: " +";
+}
+
+.toggle,
+[id^="drop"] {
+  display: none;
+}
+
+li > a:only-child:after {
+  content: "";
+}
