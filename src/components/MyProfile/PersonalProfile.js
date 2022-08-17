@@ -1,10 +1,10 @@
 import React from "react";
 import logo from "../../image/logoblack.png";
+import "./PersonalProfile.css";
 
 const PersonalProfile = () => {
   return (
     <div>
-      <img className="logo" src={logo} alt="conversa logo in black" />
       <h3>Personal Profile</h3>
       <ul>
         <div>
