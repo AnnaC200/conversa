@@ -1,32 +1,34 @@
 import React from "react";
 import "./NavBar.css";
-import logo from "../../image/logoblack.png";
 
 const NavBar = () => {
   return (
-    <div>
-      <nav>
-        <div id="logo">
-          <img className="logopic" src={logo} alt="conversa logo in black" />
-        </div>
-        <label htmlFor="drop" className="toggle">
-          Menu
-          <input type="checkbox" id="drop" />
-        </label>
-        <ul className="menu">
-          <li>
-            <label htmlFor="drop-1" className="toggle">
-              Service +<input type="checkbox" id="drop-1" />
-            </label>
-            Service
-            <ul>
-              <li>Service 1</li>
-              <li>Service 2</li>
-              <li>Service 3</li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+    <div className="header">
+      <ul className="menu">
+        <li>
+          <label className="opener" htmlFor="drop1">
+            Parent item 1<input type="radio" name="menuopt" id="drop1" />
+          </label>
+          <ul>
+            <li>Menu item 1</li>
+            <li>Menu item 2</li>
+            <li>Menu item 3</li>
+          </ul>
+        </li>
+        <li>
+          <label className="opener" htmlFor="drop2">
+            Parent item 2<input type="radio" name="menuopt" id="drop2" />
+          </label>
+          <ul>
+            <li>Menu item 1</li>
+            <li>Menu item 2</li>
+            <li>Menu item 3</li>
+            <li>Menu item 4</li>
+            <li>Menu item 5</li>
+          </ul>
+          <input type="radio" name="menuopt" id="dropclose" />
+        </li>
+      </ul>
     </div>
   );
 };
