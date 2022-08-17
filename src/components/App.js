@@ -6,6 +6,7 @@ import Homepage from "./Homepage";
 // eslint-disable-next-line import/no-named-as-default
 import Register from "./Register";
 import MyProfile from "./MyProfile/MyProfile";
+import Chat from "./Chat/Chat";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route exact path="/" component={Homepage} />
         <Route exact path="/Register" component={Register} />
         <Route exact path="/MyProfile" component={MyProfile} />
+        <Route exact path="/Chat" component={Chat} />
       </Switch>
     </div>
   );

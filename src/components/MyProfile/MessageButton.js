@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MessageButton = () => {
   return (
     <div>
-      <button type="submit">Message</button>
+      <Link to="/Chat">Message</Link>
     </div>
   );
 };
