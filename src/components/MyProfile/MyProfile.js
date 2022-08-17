@@ -2,7 +2,7 @@ import React, { Fragment, useState } from "react";
 import PersonalProfile from "./PersonalProfile";
 import SearchPeople from "./SearchPeople";
 import SearchPeopleButton from "./SearchPeopleButton";
-import 'src/components/MyProfile/MyProfile.css'
+import "./MyProfile.css";
 
 const MyProfile = () => {
   const [createEventIsShown, setCreateEventIsShown] = useState(false);
