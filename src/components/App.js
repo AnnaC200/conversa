@@ -5,6 +5,7 @@ import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import Homepage from "./Homepage";
 // eslint-disable-next-line import/no-named-as-default
 import Register from "./Register";
+import Register2 from "./Register2";
 import Login from "./Login";
 import MyProfile from "./MyProfile/MyProfile";
 
@@ -17,6 +18,7 @@ const App = () => {
           <Route exact path="/" component={Homepage} />
           <Route exact path="/Login" component={Login} />
           <Route exact path="/Register" component={Register} />
+          <Route exact path="/Register2" component={Register2} />
           <Route exact path="/MyProfile" component={MyProfile} />
         </Switch>
       </Router>
