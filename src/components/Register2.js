@@ -55,9 +55,9 @@ const Register2 = () => {
               value={fields.CompetencyLevels}
               onChange={handleFieldChange}
             >
-              <option value="Flat">Beginner</option>
-              <option value="Detached">Intermediate</option>
-              <option value="Semi-Detached">Fluent</option>
+              <option value="Beginner">Beginner</option>
+              <option value="Intermediate">Intermediate</option>
+              <option value="Fluent">Fluent</option>
             </select>
           </label>
           <button id="button" className="register2-items" type="submit">
