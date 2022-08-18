@@ -23,6 +23,7 @@ const Login = () => {
         <label className="login-items" htmlFor="UserName">
           UserName
           <input
+            className="inputfield"
             id="UserName"
             name="UserName"
             value={fields.UserName}
@@ -32,13 +33,14 @@ const Login = () => {
         <label className="login-items" htmlFor="Password">
           Password
           <input
+            className="inputfield"
             id="Password"
             name="Password"
             value={fields.Password}
             onChange={handleFieldChange}
           />
         </label>
-        <button className="login-items" type="submit">
+        <button id="button" className="login-items" type="submit">
           Login
         </button>
       </form>
