@@ -4,7 +4,7 @@ import "./PersonalProfile.css";
 
 const PersonalProfile = () => {
   return (
-    <div>
+    <div className="displaybox">
       <h3>Personal Profile</h3>
       <ul>
         <div>
