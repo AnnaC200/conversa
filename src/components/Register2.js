@@ -26,38 +26,67 @@ const Register2 = () => {
       </div>
       <div>
         <form className="register2" onSubmit={handleRegister}>
-          <label className="register2-items" htmlFor="questions">
-            Native Language
-            <input
-              className="inputfield"
-              id="native-language"
-              name="native-language"
+          <label className="register2-items" htmlFor="NativeLanguage">
+            <h3> Native Language </h3>
+            <select
+              id="NativeLanguage"
+              name="NativeLanguage"
               value={fields.NativeLanguage}
               onChange={handleFieldChange}
-            />
+            >
+              <option value="English">English</option>
+              <option value="French">French</option>
+              <option value="German">German</option>
+              <option value="Spanish">Spanish</option>
+              <option value="Italian">Italian</option>
+              <option value="Greek">Greek</option>
+              <option value="Russian">Russian</option>
+              <option value="Japanese">Japanese</option>
+              <option value="Welsh">Welsh</option>
+              <option value="Urdu">Urdu</option>
+              <option value="Polish">Polish</option>
+              <option value="Ukrainian">Ukrainian</option>
+              <option value="Cantonese">Cantonese</option>
+              <option value="German">German</option>
+            </select>
           </label>
+          <br />
           <label className="register2-items" htmlFor="DesiredLanguage">
-            Desired Language
-            <input
-              className="inputfield"
+            <h3> Desired Language</h3>
+            <select
               id="DesiredLanguage"
               name="DesiredLanguage"
               value={fields.DesiredLanguage}
               onChange={handleFieldChange}
-            />
+            >
+              <option value="English">English</option>
+              <option value="French">French</option>
+              <option value="German">German</option>
+              <option value="Spanish">Spanish</option>
+              <option value="Italian">Italian</option>
+              <option value="Greek">Greek</option>
+              <option value="Russian">Russian</option>
+              <option value="Japanese">Japanese</option>
+              <option value="Welsh">Welsh</option>
+              <option value="Urdu">Urdu</option>
+              <option value="Polish">Polish</option>
+              <option value="Ukrainian">Ukrainian</option>
+              <option value="Cantonese">Cantonese</option>
+              <option value="German">German</option>
+            </select>
           </label>
           <br />
-          <label className="competency-text" htmlFor="CompetencyLevel">
-            <h3> Competency Levels</h3>
+          <label className="competency-text" htmlFor="CompetencyLevels">
+            <h3> Competency Levels </h3>
             <select
-              id="CompetencyLevel"
-              name="CompetencyLevel"
+              id="CompetencyLevels"
+              name="CompetencyLevels"
               value={fields.CompetencyLevels}
               onChange={handleFieldChange}
             >
               <option value="Beginner">Beginner</option>
               <option value="Intermediate">Intermediate</option>
-              <option value="Fluent">Fluent</option>
+              <option value="Advanced">Advanced</option>
             </select>
           </label>
           <button id="button" className="register2-items" type="submit">
