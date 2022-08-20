@@ -8,16 +8,9 @@ body {
     width: 100%;
 }
 
-<<<<<<< Updated upstream
-.header {
-    width: 100%;
-    margin-top: 300px;
-    border: 2px solid black;
-}
-
 .logo {
   }
-=======
+
 .displaybox {
   position: absolute;
   top: 150px;
@@ -29,4 +22,3 @@ body {
   border-radius: 5px;
   padding: 15px;
 }
->>>>>>> Stashed changes

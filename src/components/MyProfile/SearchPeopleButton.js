@@ -1,5 +1,5 @@
 import React from "react";
-import "src/components/MyProfile/SearchPeopleButton.js";
+import "./SearchPeopleButton.css";
 
 const SearchPeopleButton = (props) => {
   return (
