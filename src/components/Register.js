@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+/* eslint-disable no-console */
+import React, { useState, useHistory } from "react";
 import "../styles/register.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
 import image from "../image/logocolour.png";
 import background from "../image/languages.png";
 import peopletalking from "../image/peopletalking.png";
@@ -14,8 +16,17 @@ const Register = () => {
     },
   };
   const [fields, setFields] = useState(initialState2.fields);
-  const handleRegister = (event) => {
+  const history = useHistory();
+  const handleRegister = async (event) => {
     event.preventDefault();
+    const response = await axios.post(`http://localhost:3000/users`, {
+      ...fields,
+    });
+    if (response.status === 201) {
+      history.push("/Register2");
+    } else {
+      // SHOW ERROR MESSAGE
+    }
   };
   const handleFieldChange = (event) => {
     setFields({ ...fields, [event.target.name]: event.target.value });

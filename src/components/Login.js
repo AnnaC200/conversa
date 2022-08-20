@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useHistory } from "react";
 import "../styles/login.css";
 // import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
+import axios from "axios";
 import background from "../image/languages.png";
 import peopletalking from "../image/peopletalking.png";
 
@@ -13,8 +14,17 @@ const Login = () => {
     },
   };
   const [fields, setFields] = useState(initialState.fields);
-  const handleLogin = (event) => {
+  const history = useHistory();
+  const handleLogin = async (event) => {
     event.preventDefault();
+    const response = await axios.post(`http://localhost:3000/ouruserstable`, {
+      ...fields,
+    });
+    if (response.status === 200) {
+      history.push("/MyProfile");
+    } else {
+      // SHOW ERROR MESSAGE
+    }
   };
   const handleFieldChange = (event) => {
     setFields({ ...fields, [event.target.name]: event.target.value });
