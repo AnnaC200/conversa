@@ -3,6 +3,7 @@ import PersonalProfile from "./PersonalProfile";
 import SearchPeople from "./SearchPeople";
 import SearchPeopleButton from "./SearchPeopleButton";
 import "./MyProfile.css";
+import "../../styles/font.css";
 
 const MyProfile = () => {
   const [createEventIsShown, setCreateEventIsShown] = useState(false);
@@ -16,11 +17,16 @@ const MyProfile = () => {
   };
 
   return (
+<<<<<<< Updated upstream
     <Fragment>
+=======
+    <>
+      <NavBar />
+>>>>>>> Stashed changes
       {createEventIsShown && <SearchPeople onClose={hideCreateEventHandler} />}
       <PersonalProfile />
       <SearchPeopleButton onShowCreateEvent={showCreateEventHandler} />
-    </Fragment>
+    </>
   );
 };
 

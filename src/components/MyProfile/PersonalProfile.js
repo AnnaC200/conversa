@@ -7,7 +7,7 @@ const PersonalProfile = () => {
     <div>
       <h3>Personal Profile</h3>
       <ul>
-        <div>
+        <div className="details">
           <div>Name: </div>
           <div>Age: </div>
           <div>Location: </div>

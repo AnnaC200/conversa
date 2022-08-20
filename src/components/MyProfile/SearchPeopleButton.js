@@ -1,4 +1,5 @@
 import React from "react";
+import "src/components/MyProfile/SearchPeopleButton.js";
 
 const SearchPeopleButton = (props) => {
   return (
