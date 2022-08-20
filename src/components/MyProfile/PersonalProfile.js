@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../../image/logoblack.png";
 import "./PersonalProfile.css";
 
 const PersonalProfile = () => {
