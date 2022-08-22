@@ -8,7 +8,7 @@ import signout from "../../image/signouticon.png";
 const NavBar = () => {
   return (
     <div className="header">
-      <img className="logo" src={logo} alt="conversa-logo" />
+      <img id="logo" src={logo} alt="conversa-logo" />
       <div className="icons">
         <img
           className="icon"
