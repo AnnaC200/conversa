@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useHistory } from "react";
 import "../styles/font.css";
 /* eslint-disable no-console */
-import React, { useState, useHistory } from "react";
 import "../styles/register.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
