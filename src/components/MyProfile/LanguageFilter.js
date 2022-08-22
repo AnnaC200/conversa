@@ -8,7 +8,7 @@ const LanguageFilter = (props) => {
   return (
     <div>
       <label>Language to practice</label>
-      <select value={props.selected} onChange={dropdownChangeHandler}>
+      <select onChange={props.onChange} value={props.desiredLanguage}>
         <option value="Portuguese">Portuguese</option>
         <option value="Spanish">Spanish</option>
         <option value="Italian">Italian</option>
