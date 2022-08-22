@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders app 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="homepage"
+    >
+      <img
+        alt="background"
+        class="background"
+        src="languages.png"
+      />
+      <img
+        alt="conversa-logo"
+        class="logo"
+        src="logocolour.png"
+      />
+      <div
+        class="buttons"
+      >
+        <a
+          class="homepage-button"
+          href="/Login"
+        >
+          Sign-in
+        </a>
+        <br />
+        <br />
+        <br />
+        <br />
+        <a
+          class="homepage-button"
+          href="/Register"
+        >
+          Register
+        </a>
+        <br />
+        <br />
+        <br />
+        <br />
+        <a
+          class="homepage-button"
+          href="/MyProfile"
+        >
+          My Profile
+        </a>
+      </div>
+      <div>
+        <p
+          class="slogans"
+        >
+          Get involved
+          <br />
+          Meet up
+          <br />
+          Exchange languages
+        </p>
+      </div>
+      <div
+        class="peopletalking"
+      >
+        <img
+          alt="people talking"
+          src="peopletalking.png"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
