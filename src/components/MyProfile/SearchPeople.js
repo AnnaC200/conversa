@@ -81,7 +81,7 @@ const SearchPeople = (props) => {
 
   const filter = async () => {
     axios
-      .get(`http://localhost:3000/users`, { city, desiredLanguage }) // insert http pass language and city
+      .get(`http://localhost:4000/users`, { city, desiredLanguage }) // insert http pass language and city
       .then((response) => setUsers(response.data))
       .catch((error) => {
         console.log(error);
@@ -100,7 +100,7 @@ const SearchPeople = (props) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/users`) // insert http string
+      .get(`http://localhost:4000/users`) // insert http string
       .then((response) => setUsers(response.data))
       .catch((error) => {
         console.log(error);

@@ -20,7 +20,7 @@ const Register = () => {
   const history = useHistory();
   const handleRegister = async (event) => {
     event.preventDefault();
-    const response = await axios.post(`http://localhost:3000/users`, {
+    const response = await axios.post(`http://localhost:4000/users`, {
       ...fields,
     });
     if (response.status === 201) {
