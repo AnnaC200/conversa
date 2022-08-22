@@ -11,7 +11,7 @@ const Homepage = () => {
     <body>
       <div className="homepage">
         <img className="background" src={background} alt="background" />
-        <img className="logo" src={image} alt="conversa-logo" />
+        <img id="logocolour" src={image} alt="conversa-logo" />
         <div className="buttons">
           <Link className="homepage-button" to="/Login">
             Sign-in

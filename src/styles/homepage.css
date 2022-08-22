@@ -19,17 +19,14 @@ body {
     z-index: -3;
 }
 
-.logo {
-    margin-top: 10px;
+#logocolour {
     position: absolute;
-    left: 9.58%;
-    right: 9.58%;
-    top: 3.56%;
-    bottom: 82.61%;
-    width: 80%;
+    top: 2%;
+    left: 50%;
+    translate: -50%;
+    width: 100%;
     max-width: 400px;
-    margin: auto;
-  }
+}
 
 .buttons {
     margin-top: 150px;

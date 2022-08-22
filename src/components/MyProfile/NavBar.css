@@ -9,6 +9,7 @@ body {
 }
 
 .header {
+  position: relative;
   height: 70px;
   font-family: 'Josefin Sans', sans-serif;
   background-color: #F0CF65;
@@ -19,13 +20,16 @@ body {
 }
 
 .logo {
-  position: relative;
-  top: 5%;
-  left: -25px;
+  position: absolute;
   width: 45%;
+  max-width: 200px;
+  left: 1%;
+  top: 28%;
 }
 
 .icons {
+  position: absolute;
+  right: 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

@@ -19,16 +19,13 @@ body {
   z-index: -2;
 }
 
-.logo {
-  margin-top: 10px;
+#logocolour {
   position: absolute;
-  left: 9.58%;
-  right: 9.58%;
-  top: 3.56%;
-  bottom: 82.61%;
-  width: 80%;
+  top: 2%;
+  left: 50%;
+  translate: -50%;
+  width: 100%;
   max-width: 400px;
-  margin: auto;
 }
 
 .register {
@@ -59,6 +56,10 @@ body {
   margin-top: 5%;
 }
 
+#lastregister {
+  margin-bottom: 10%;
+}
+
 .inputfield {
   width: 80%;
   padding-top: 10%;
@@ -81,16 +82,20 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
   text-decoration: underline;
-  top: 200px;
+  top: 230px;
+  background-color: white;
+  width: 50%;
+  margin: auto;
+  line-height: 50px;
 }
 
 #button {
   background-color: #f0cf65;
   border-radius: 10px;
   width: 40%;
-  line-height: 30px;
+  line-height: 50px;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;
-  margin-top: 10%;
-  margin-bottom: 10%;;
+  margin-top: 65%;
+  margin-bottom: 10%;
 }

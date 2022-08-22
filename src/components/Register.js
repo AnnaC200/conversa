@@ -27,7 +27,7 @@ const Register = () => {
         <img className="background" src={background} alt="background" />
       </div>
       <div>
-        <img className="logo" src={image} alt="conversa-logo" />
+        <img id="logocolour" src={image} alt="conversa-logo" />
       </div>
       <div>
         <form className="register" onSubmit={handleRegister}>
@@ -51,7 +51,11 @@ const Register = () => {
               onChange={handleFieldChange}
             />
           </label>
-          <label className="register-items" htmlFor="Password">
+          <label
+            id="lastregister"
+            className="register-items"
+            htmlFor="Password"
+          >
             Password
             <input
               className="inputfield"
