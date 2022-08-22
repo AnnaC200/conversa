@@ -19,7 +19,7 @@ body {
   justify-content: space-between;
 }
 
-.logo {
+#logo {
   position: absolute;
   width: 45%;
   max-width: 200px;
