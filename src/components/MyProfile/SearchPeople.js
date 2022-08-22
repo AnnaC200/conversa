@@ -81,7 +81,7 @@ const SearchPeople = (props) => {
 
   const filter = async () => {
     axios
-      .get(`http://localhost:3000/connections`, { city, desiredLanguage }) // insert http pass language and city
+      .get(`http://localhost:3000/users`, { city, desiredLanguage }) // insert http pass language and city
       .then((response) => setUsers(response.data))
       .catch((error) => {
         console.log(error);
@@ -116,9 +116,10 @@ const SearchPeople = (props) => {
       />
       <div>
         <div>
-          {users.map((user) => (
-            <IndividualPerson key={user._id} {...users} />
-          ))}
+          {users.map((user) => {
+            console.log(user);
+            return <IndividualPerson key={user._id} {...users} />;
+          })}
         </div>
         <button type="submit" onClick={props.onClose}>
           Close

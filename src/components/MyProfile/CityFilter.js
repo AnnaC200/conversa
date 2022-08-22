@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
-import qs from "qs";
+import React from "react";
+// import { useLocation } from "react-router-dom";
 
 const CityFilter = (props) => {
-  const { search } = useLocation();
+  // const { search } = useLocation();
 
   return (
     <div>

@@ -11,7 +11,6 @@ const IndividualPerson = ({
   desiredLanguage,
   aboutMe,
   email,
-  password,
 }) => {
   return (
     <div>
@@ -22,7 +21,7 @@ const IndividualPerson = ({
           <li>{age}</li>
           <li>{nativeLanguage}</li>
           <li>{desiredLanguage}</li>
-          <li>{aboutMe}</li>
+          <li>{aboutMe || "No data provided"}</li>
         </ul>
       </div>
       <div>

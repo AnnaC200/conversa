@@ -1,10 +1,6 @@
 import React from "react";
 
 const LanguageFilter = (props) => {
-  const dropdownChangeHandler = (event) => {
-    props.onChangeFilter(event.target.value);
-  };
-
   return (
     <div>
       <label>Language to practice</label>
