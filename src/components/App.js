@@ -7,6 +7,7 @@ import Homepage from "./Homepage";
 import Register from "./Register";
 import MyProfile from "./MyProfile/MyProfile";
 import Chat from "./Chat/Chat";
+import Login from "./Login";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       {/* <Navbar /> */}
       <Switch>
         <Route exact path="/" component={Homepage} />
+        <Route exact path="/Login" component={Login} />
         <Route exact path="/Register" component={Register} />
         <Route exact path="/MyProfile" component={MyProfile} />
         <Route exact path="/Chat" component={Chat} />
