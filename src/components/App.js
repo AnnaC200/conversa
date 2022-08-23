@@ -8,7 +8,7 @@ import Register from "./Register";
 import Register2 from "./Register2";
 import Login from "./Login";
 import MyProfile from "./MyProfile/MyProfile";
-import Chat from "./Chat/Chat";
+// import Chat from "./Chat/Chat";
 
 const App = () => {
   return (

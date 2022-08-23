@@ -1,9 +1,9 @@
-import React, { useState, useHistory } from "react";
+import React, { useState } from "react";
 import "../styles/font.css";
 /* eslint-disable no-console */
 import "../styles/register.css";
 import { Link } from "react-router-dom";
-import axios from "axios";
+// import axios from "axios";
 import image from "../image/logocolour.png";
 import background from "../image/languages.png";
 import peopletalking from "../image/peopletalking.png";
@@ -17,17 +17,16 @@ const Register = () => {
     },
   };
   const [fields, setFields] = useState(initialState2.fields);
-  const history = useHistory();
-  const handleRegister = async (event) => {
+  const handleRegister = (event) => {
     event.preventDefault();
-    const response = await axios.post(`http://localhost:4000/users`, {
-      ...fields,
-    });
-    if (response.status === 201) {
-      history.push("/Register2");
-    } else {
-      // SHOW ERROR MESSAGE
-    }
+    //   const response = await axios.post(`http://localhost:4000/users`, {
+    //     ...fields,
+    //   });
+    //   if (response.status === 201) {
+    //     history.push("/Register2");
+    //   } else {
+    //     // SHOW ERROR MESSAGE
+    //   }
   };
   const handleFieldChange = (event) => {
     setFields({ ...fields, [event.target.name]: event.target.value });
@@ -76,9 +75,7 @@ const Register = () => {
               onChange={handleFieldChange}
             />
           </label>
-          <button id="button" className="register-items" type="submit">
-            Register
-          </button>
+          <Link to="/Register2"> Continue Registration </Link>
         </form>
         <br />
         <div className="link-to">

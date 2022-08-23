@@ -7,6 +7,9 @@ import peopletalking from "../image/peopletalking.png";
 const Register2 = () => {
   const initialState3 = {
     fields: {
+      ProfileName: "",
+      Age: "",
+      Location: "",
       NativeLanguage: "",
       DesiredLanguage: "",
       CompetencyLevels: "",
@@ -26,6 +29,43 @@ const Register2 = () => {
       </div>
       <div>
         <form className="register2" onSubmit={handleRegister}>
+          <label className="register2-items" htmlFor="ProfileName">
+            <h3> Profile Name </h3>
+            <input
+              className="inputfield"
+              id="ProfileName"
+              name="ProfileName"
+              value={fields.ProfileName}
+              onChange={handleFieldChange}
+            />
+          </label>
+          <label className="register2-items" htmlFor="Age">
+            <h3> Age </h3>
+            <input
+              className="inputfield"
+              id="Age"
+              name="Age"
+              value={fields.Age}
+              onChange={handleFieldChange}
+            />
+          </label>
+          <br />
+          <label className="register2-items" htmlFor="Location">
+            <h3> Your Location </h3>
+            <select
+              id="Location"
+              name="Location"
+              value={fields.Location}
+              onChange={handleFieldChange}
+            >
+              <option value="Manchester"> Manchester </option>
+              <option value="Liverpool"> Liverpool </option>
+              <option value="London"> London </option>
+              <option value="Leeds"> Leeds </option>
+              <option value="Sheffield"> Sheffield </option>
+            </select>
+          </label>
+          <br />
           <label className="register2-items" htmlFor="NativeLanguage">
             <h3> Native Language </h3>
             <select
@@ -77,7 +117,7 @@ const Register2 = () => {
           </label>
           <br />
           <label className="competency-text" htmlFor="CompetencyLevels">
-            <h3> Competency Levels </h3>
+            <h3> Desired language competency </h3>
             <select
               id="CompetencyLevels"
               name="CompetencyLevels"
@@ -89,9 +129,11 @@ const Register2 = () => {
               <option value="Advanced">Advanced</option>
             </select>
           </label>
-          <button id="button" className="register2-items" type="submit">
-            Connect With People
-          </button>
+          <br />
+          <h3> A little about you...</h3>
+          <textarea> </textarea>
+          <br />
+          <Link to="/MyProfile">Create Profile</Link>
         </form>
         <br />
         <div className="link-to">

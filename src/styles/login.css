@@ -81,16 +81,7 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
   text-decoration: underline;
-  top: 200px;
+  top: 300px;
 }
 
-#button {
-  background-color: #f0cf65;
-  border-radius: 10px;
-  width: 40%;
-  line-height: 30px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 20px;
-  margin-top: 10%;
-  margin-bottom: 10%;;
-}
+
