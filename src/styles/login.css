@@ -24,6 +24,7 @@ body {
 }
 
 .login-items {
+  padding-bottom: 20px;
   font-family: 'Josefin Sans', sans-serif;
   display: flex;
   flex-direction: column;
@@ -58,6 +59,7 @@ body {
   text-align: center;
   text-decoration: none;
   position: relative;
+  top: 25px;
   font-family: 'Josefin Sans', sans-serif;
   padding: 5px;
 }
