@@ -7,11 +7,10 @@ const PersonalProfile = () => {
       <h3>Personal Profile</h3>
       <ul>
         <div>
-          <div>Name: </div>
-          <div>Age: </div>
-          <div>Location: </div>
-          <div>Desired Language: </div>
-          <div>About Me: </div>
+          <div>Name: Matthew </div>
+          <div>Age: 31 </div>
+          <div>Location: Liverpool </div>
+          <div>Desired Language: Spanish </div>
         </div>
       </ul>
     </div>

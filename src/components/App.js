@@ -8,7 +8,7 @@ import Register from "./Register";
 import Register2 from "./Register2";
 import Login from "./Login";
 import MyProfile from "./MyProfile/MyProfile";
-// import Chat from "./Chat/Chat";
+import Chat from "./Chat/Chat";
 
 const App = () => {
   return (
@@ -21,6 +21,7 @@ const App = () => {
           <Route exact path="/Register" component={Register} />
           <Route exact path="/Register2" component={Register2} />
           <Route exact path="/MyProfile" component={MyProfile} />
+          <Route exact path="/Chat" component={Chat} />
         </Switch>
       </Router>
     </div>
