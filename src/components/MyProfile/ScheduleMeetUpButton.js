@@ -1,9 +1,10 @@
 import React from "react";
+import "./ScheduleMeetUpButton.css";
 
 const ScheduleMeetUpButton = () => {
   return (
     <div>
-      <button type="submit">Schedule Meet-up</button>
+      <button className="meetupbutton" type="submit">Schedule Meet-up</button>
     </div>
   );
 };

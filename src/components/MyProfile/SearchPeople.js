@@ -33,6 +33,7 @@ const SearchPeople = (props) => {
       />
       {filteredExpenses.map((people) => (
         <IndividualPerson
+          className="personx"
           key={people.id}
           name={people.name}
           age={people.age}
@@ -42,7 +43,11 @@ const SearchPeople = (props) => {
         />
       ))}
       <div>
-        <button className="closebutton" type="submit" onClick={props.onClose}>
+        <button
+          className="closebuttonmodal"
+          type="submit"
+          onClick={props.onClose}
+        >
           Close
         </button>
       </div>
