@@ -1,3 +1,7 @@
+body {
+  width: 100%;
+}
+
 .login {
   background-color: #9AD2CB;
   position: relative;
@@ -46,4 +50,14 @@
 
 .loginbutton {
   text-decoration: underline;
+}
+
+.peopletalkinglogin {
+  position:fixed;
+  margin: auto;
+  width: 100%;
+  max-width: 2000px;
+  bottom:3px;
+  left: 50%;
+  transform: translateX(-50%);
 }

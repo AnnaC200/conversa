@@ -70,8 +70,12 @@ const Login = () => {
             Need to register?
           </Link>
         </div>
-        <div className="peopletalking">
-          <img src={peopletalking} alt="people talking" />
+        <div>
+          <img
+            className="peopletalkinglogin"
+            src={peopletalking}
+            alt="people talking"
+          />
         </div>
       </div>
     </>
