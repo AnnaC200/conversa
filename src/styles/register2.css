@@ -83,17 +83,6 @@
     text-decoration: underline;
     top: 200px;
   }
-  
-  #button2 {
-    background-color: #f0cf65;
-    border-radius: 10px;
-    width: 40%;
-    line-height: 30px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
-    margin-top: 10%;
-    margin-bottom: 10%;;
-  }
 
 .competency-text {
   font-size: 15px;
@@ -102,4 +91,17 @@
 
 h3 {
   font-size: medium;
+}
+
+.button {
+  font-family: 'Josefin Sans', sans-serif;
+    width: 140px;
+    height: 50px;
+    background: #F0CF65;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 25px;
+    text-align: center;
+    line-height: 25px;
 }

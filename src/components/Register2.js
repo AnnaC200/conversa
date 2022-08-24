@@ -133,8 +133,14 @@ const Register2 = () => {
           <h3> A little about you...</h3>
           <textarea> </textarea>
           <br />
-          <Link to="/MyProfile">Create Profile</Link>
+          <Link className="button" to="/MyProfile">
+            Create Profile
+          </Link>
         </form>
+        <br />
+        <br />
+        <br />
+        <br />
         <br />
         <div className="link-to">
           <Link to="/Login">Already have an account?</Link>
