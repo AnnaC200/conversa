@@ -58,13 +58,11 @@ const Login = () => {
               onChange={handleFieldChange}
             />
           </label>
-          <br />
           <Link className="loginbutton" to="/MyProfile">
             {" "}
             Login{" "}
           </Link>
         </form>
-        <br />
         <div>
           <Link className="link-to" to="/Register">
             Need to register?
