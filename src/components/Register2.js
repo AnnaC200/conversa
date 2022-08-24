@@ -30,7 +30,7 @@ const Register2 = () => {
       <div>
         <form className="register2" onSubmit={handleRegister}>
           <label className="register2-items" htmlFor="ProfileName">
-            <h3> Profile Name </h3>
+            <p> Profile Name </p>
             <input
               className="inputfield"
               id="ProfileName"
@@ -40,7 +40,6 @@ const Register2 = () => {
             />
           </label>
           <label className="register2-items" htmlFor="Age">
-            <h3> Age </h3>
             <input
               className="inputfield"
               id="Age"
@@ -49,9 +48,8 @@ const Register2 = () => {
               onChange={handleFieldChange}
             />
           </label>
-          <br />
           <label className="register2-items" htmlFor="Location">
-            <h3> Your Location </h3>
+            <p> Your Location </p>
             <select
               id="Location"
               name="Location"
@@ -65,9 +63,8 @@ const Register2 = () => {
               <option value="Sheffield"> Sheffield </option>
             </select>
           </label>
-          <br />
           <label className="register2-items" htmlFor="NativeLanguage">
-            <h3> Native Language </h3>
+            <p> Native Language </p>
             <select
               id="NativeLanguage"
               name="NativeLanguage"
@@ -90,9 +87,8 @@ const Register2 = () => {
               <option value="German">German</option>
             </select>
           </label>
-          <br />
           <label className="register2-items" htmlFor="DesiredLanguage">
-            <h3> Desired Language</h3>
+            <p> Desired Language</p>
             <select
               id="DesiredLanguage"
               name="DesiredLanguage"
@@ -115,9 +111,8 @@ const Register2 = () => {
               <option value="German">German</option>
             </select>
           </label>
-          <br />
           <label className="competency-text" htmlFor="CompetencyLevels">
-            <h3> Desired language competency </h3>
+            <p> Desired language competency </p>
             <select
               id="CompetencyLevels"
               name="CompetencyLevels"
@@ -129,19 +124,12 @@ const Register2 = () => {
               <option value="Advanced">Advanced</option>
             </select>
           </label>
-          <br />
-          <h3> A little about you...</h3>
+          <p> A little about you...</p>
           <textarea> </textarea>
-          <br />
           <Link className="button" to="/MyProfile">
             Create Profile
           </Link>
         </form>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
         <div className="link-to">
           <Link to="/Login">Already have an account?</Link>
         </div>
