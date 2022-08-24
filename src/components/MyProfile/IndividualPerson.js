@@ -65,9 +65,10 @@ const IndividualPerson = (props) => {
         <div>Desired Language: {props.desiredLanguage}</div>
         <div>About Me: {props.aboutMe}</div>
         <div>
+          <MessageButton />
+        </div>
         <div>
           <ScheduleMeetUpButton />
-        </div>
         </div>
       </div>
     </ul>
@@ -75,3 +76,12 @@ const IndividualPerson = (props) => {
 };
 
 export default IndividualPerson;
+
+{
+  /* <div>
+          <MessageButton />
+        </div>
+        <div>
+          <ScheduleMeetUpButton />
+        </div> */
+}
