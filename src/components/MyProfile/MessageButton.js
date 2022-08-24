@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./MessageButton.css";
 
 const MessageButton = () => {
   return (
     <div>
-      <Link to="/Chat">Message</Link>
+      <Link className="messagebutton" to="/Chat">Message</Link>
     </div>
   );
 };
