@@ -3,11 +3,14 @@ import React from "react";
 
 const CityFilter = (props) => {
   // const { search } = useLocation();
+  const dropdownChangeHandler = (event) => {
+    props.onChangeFilter(event.target.value);
+  };
 
   return (
     <div>
       <label>City</label>
-      <select onChange={props.onChange} value={props.city}>
+      <select value={props.selected} onChange={dropdownChangeHandler}>
         <option value="Manchester">Manchester</option>
         <option value="Liverpool">Liverpool</option>
         <option value="London">London</option>
