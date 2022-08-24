@@ -3,6 +3,7 @@ import "../styles/register2.css";
 import { Link } from "react-router-dom";
 import background from "../image/languages.png";
 import peopletalking from "../image/peopletalking.png";
+import image from "../image/logocolour.png";
 
 const Register2 = () => {
   const initialState3 = {
@@ -28,11 +29,14 @@ const Register2 = () => {
         <img className="background" src={background} alt="background" />
       </div>
       <div>
+        <img id="logocolour" src={image} alt="conversa-logo" />
+      </div>
+      <div>
         <form className="register2" onSubmit={handleRegister}>
           <label className="register2-items" htmlFor="ProfileName">
             <p> Profile Name </p>
             <input
-              className="inputfield"
+              className="inputfieldregister2"
               id="ProfileName"
               name="ProfileName"
               value={fields.ProfileName}
@@ -40,8 +44,9 @@ const Register2 = () => {
             />
           </label>
           <label className="register2-items" htmlFor="Age">
+            <p>Age</p>
             <input
-              className="inputfield"
+              className="inputfieldregister2"
               id="Age"
               name="Age"
               value={fields.Age}
@@ -112,7 +117,7 @@ const Register2 = () => {
             </select>
           </label>
           <label className="competency-text" htmlFor="CompetencyLevels">
-            <p> Desired language competency </p>
+            <p> Desired Competency </p>
             <select
               id="CompetencyLevels"
               name="CompetencyLevels"
@@ -126,11 +131,11 @@ const Register2 = () => {
           </label>
           <p> A little about you...</p>
           <textarea> </textarea>
-          <Link className="button" to="/MyProfile">
+          <Link className="buttonregister2" to="/MyProfile">
             Create Profile
           </Link>
         </form>
-        <div className="link-to">
+        <div className="link-toregister2">
           <Link to="/Login">Already have an account?</Link>
         </div>
         <div className="peopletalking">
