@@ -3,6 +3,7 @@ import "../styles/login.css";
 // import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 // import axios from "axios";
+import image from "../image/logocolour.png";
 import background from "../image/languages.png";
 import peopletalking from "../image/peopletalking.png";
 
@@ -32,12 +33,13 @@ const Login = () => {
   return (
     <>
       <div className="images">
+        <img id="logocolour" src={image} alt="conversa-logo" />
         <img className="background" src={background} alt="background" />
       </div>
       <div className="login">
         <form onSubmit={handleLogin}>
           <label className="login-items" htmlFor="UserName">
-            UserName
+            Username
             <input
               className="inputfield"
               id="UserName"
@@ -57,7 +59,10 @@ const Login = () => {
             />
           </label>
           <br />
-          <Link to="/MyProfile"> Login </Link>
+          <Link className="loginbutton" to="/MyProfile">
+            {" "}
+            Login{" "}
+          </Link>
         </form>
         <br />
         <div>
