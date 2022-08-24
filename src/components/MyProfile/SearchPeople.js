@@ -3,6 +3,7 @@ import Modal from "./Modal";
 import IndividualPerson from "./IndividualPerson";
 import CityFilter from "./CityFilter";
 import LanguageFilter from "./LanguageFilter";
+import "./SearchPeople.css";
 
 const SearchPeople = (props) => {
   const [city, setCity] = useState("");
@@ -41,7 +42,7 @@ const SearchPeople = (props) => {
         />
       ))}
       <div>
-        <button type="submit" onClick={props.onClose}>
+        <button className="closebutton" type="submit" onClick={props.onClose}>
           Close
         </button>
       </div>
