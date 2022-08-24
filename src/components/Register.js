@@ -44,7 +44,7 @@ const Register = () => {
           <label className="register-items" htmlFor="UserName">
             Username
             <input
-              className="inputfield"
+              className="inputfieldregister"
               id="UserName"
               name="UserName"
               value={fields.UserName}
@@ -54,7 +54,7 @@ const Register = () => {
           <label className="register-items" htmlFor="Email">
             Email
             <input
-              className="inputfield"
+              className="inputfieldregister"
               id="Email"
               name="Email"
               value={fields.Email}
@@ -68,17 +68,20 @@ const Register = () => {
           >
             Password
             <input
-              className="inputfield"
+              className="inputfieldregister"
               id="Password"
               name="Password"
               value={fields.Password}
               onChange={handleFieldChange}
             />
           </label>
-          <Link to="/Register2"> Continue Registration </Link>
+          <Link id="registerbutton" to="/Register2">
+            {" "}
+            Continue Registration{" "}
+          </Link>
         </form>
         <br />
-        <div className="link-to">
+        <div className="link-toregister">
           <Link to="/Login">Already have an account?</Link>
         </div>
         <div className="peopletalking">
