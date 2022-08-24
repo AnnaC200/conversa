@@ -19,3 +19,7 @@ body {
   border-radius: 5px;
   padding: 15px;
 }
+
+.displaybox h3, ul {
+  font-family: 'Josefin Sans', sans-serif;
+}

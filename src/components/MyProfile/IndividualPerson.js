@@ -2,6 +2,7 @@ import React from "react";
 import MessageButton from "./MessageButton";
 import ScheduleMeetUpButton from "./ScheduleMeetUpButton";
 import "./IndividualPerson.css";
+import "../../styles/font.css";
 
 // {
 //   "id": 1,
@@ -64,7 +65,9 @@ const IndividualPerson = (props) => {
         <div>Desired Language: {props.desiredLanguage}</div>
         <div>About Me: {props.aboutMe}</div>
         <div>
+        <div>
           <ScheduleMeetUpButton />
+        </div>
         </div>
       </div>
     </ul>
