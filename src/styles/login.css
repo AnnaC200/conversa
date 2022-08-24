@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 31px;
+  padding-bottom: 33px;
 }
 
 .login-items {
@@ -49,7 +49,17 @@ body {
 }
 
 .loginbutton {
-  text-decoration: underline;
+  width: 60%;
+  background: #F0CF65;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 5px;
 }
 
 .peopletalkinglogin {
@@ -57,7 +67,7 @@ body {
   margin: auto;
   width: 100%;
   max-width: 2000px;
-  bottom:3px;
+  bottom:4px;
   left: 50%;
   transform: translateX(-50%);
 }
